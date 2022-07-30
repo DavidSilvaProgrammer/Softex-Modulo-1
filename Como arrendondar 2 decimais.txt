@@ -1,0 +1,5 @@
+inclua biblioteca Matematica --> mat
+
+real arredondado
+
+arendodado = mat.arrendado(resultado,2)
