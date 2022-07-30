@@ -1,0 +1,58 @@
+ Lógica de Programação e Orientação a Objetos 
+
+programa {
+	funcao inicio() {
+	    
+//Instruções do projeto
+//Elabore um algoritmo que representa um cadastro. Ele deve ler os seguintes dados fornecidos pelo usuário:
+
+//- Nome
+//- Endereço
+//- Cidade
+//- CPF
+//- RG
+//- Idade
+//- Nome do pai
+//- Nome da mãe
+//- Peso
+//- Renda bruta
+
+//Apresente as informações solicitadas no final do cadastro.
+
+//Realize essa atividade no WORD ou no Bloco de Notas, suba esse arquivo para algum repositório e compartilhe o link no campo ao lado para que outros desenvolvedores possam analisá-lo.
+
+cadeia nome, endereco, cidade, cpf, rg, idade, nome_do_pai, nome_da_mae
+real peso, renda_bruta
+
+escreva("Digite seu nome: ")
+leia(nome)
+escreva("Digite seu endereço: ")
+leia(endereco)
+escreva("Digite sua cidade: ")
+leia(cidade)
+escreva("Digite seu CPF: ")
+leia(cpf)
+escreva("Digite seu RG: ")
+leia(rg)
+escreva("Digite sua idade: ")
+leia(idade)
+escreva("Digite o nome de seu pai: ")
+leia(nome_do_pai)
+escreva("Digite o nome de sua mãe: ")
+leia(nome_da_mae)
+escreva("Digite o seu peso: ")
+leia(peso)
+escreva("Escreva sua renda bruta: ")
+leia(renda_bruta)
+
+escreva("\nNome: ",nome,"\nEndereço :", endereco,"\nCidade: ",cidade,"\nCPF: ", cpf, "\nRG: ",rg,"\nIdade: ", idade,"\nNome do pai: ", nome_do_pai,"\nNome da mae: ",nome_da_mae,"\nPeso: ",peso,"\nRenda bruta: ",renda_bruta)
+
+
+
+	}
+}
+
+
+
+
+
