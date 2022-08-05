@@ -1,0 +1,163 @@
+programa {
+	funcao inicio() {
+	    inteiro veiculo
+		
+		escreva("Programa que advinha meio de trasporte por meio de perguntas e respostas: \n")
+	    escreva("Digite 1 para sim e 2 para não: \n")
+		escreva("É terrestre? ")
+		leia(veiculo)
+se (veiculo == 1){
+		    escreva("Cabe apenas uma pessoas? \n")
+	   leia(veiculo)
+	   se (veiculo == 1){
+	       escreva("É pesado? \n")
+	       leia(veiculo)
+	       se (veiculo == 1){
+	           escreva("Trator.")
+	       }
+	        se (veiculo != 1){
+	            escreva("Tem pedal? \n")
+	            leia(veiculo)
+	        }
+	        se (veiculo == 1)
+	        escreva("Bicicleta.")
+	        }
+
+	   
+	  
+	   senao se (veiculo != 1)
+	   {escreva("Usa capacete? \n")
+	   leia (veiculo)
+	   se (veiculo == 1){
+	       escreva("Moto.")
+	   }
+	   senao se (veiculo != 1)
+	   {escreva("Tem passageiro? \n")
+	   leia(veiculo)
+	   se (veiculo == 1){
+	       escreva("Usa trilho? \n")
+	       leia(veiculo)
+	   se (veiculo == 1){
+	       escreva("Trem.")
+	   }
+	   senao {
+	       escreva("Anda na pista? \n")
+	       leia(veiculo)
+	       se (veiculo == 1){
+	           escreva("É alto?")
+	           leia(veiculo)
+	       se (veiculo == 1){
+	           escreva("Usa carroceria? \n")
+	           leia (veiculo)
+	       
+	       se (veiculo == 1){
+	           escreva("Caminhão.")
+	       }
+	       senao se (veiculo !=1) 
+	           escreva("Pode ter cobrador? \n")
+	           leia(veiculo)
+	           se (veiculo == 1){
+	               escreva("Ônibus. \n")
+	           }
+	       }senao se( veiculo != 1){
+	           escreva("É veículo leve? \n")
+	           leia(veiculo)
+	           se (veiculo == 1){
+	               escreva("Carro.")
+	           }
+	       }
+	       
+	       }   
+	   }
+	   }
+	   }
+	   }
+}senao se (veiculo != 1){
+    escreva("É aereo? \n")
+    leia(veiculo)
+    se (veiculo == 1){
+        escreva("Precisa pular? \n")
+        leia(veiculo)
+        se (veiculo == 1){
+            escreva("Asa delta. \n")
+        }
+     senao se (veiculo != 1){
+        escreva("Viaja dentro? \n")
+        leia(veiculo)
+        se (veiculo == 1){
+            escreva("É devagar? \n")
+            leia(veiculo)
+            se (veiculo == 1)
+            escreva("Balão. \n")
+        senao se (veiculo != 1){
+            escreva("Tem piloto? \n")
+            leia(veiculo)
+            se (veiculo == 1){
+                escreva("Possui asas fixas? \n")
+                leia(veiculo)
+                se (veiculo == 1){
+                    escreva ("Avião. \n")
+                } senao{
+                    escreva("Faz voo vertical? \n")
+                    leia(veiculo)
+                    se (veiculo == 1){
+                        escreva("Helicóptero")
+                    }
+                }
+                
+            }
+        }
+        }
+     }
+}
+	senao {
+	escreva("É aquatico? \n")
+	leia(veiculo)
+	se (veiculo == 1){
+	    escreva("É coberto d'agua? \n")
+	    leia(veiculo)
+	    se (veiculo == 1){
+	        escreva("Submarino. \n")
+	    }
+	senao se (veiculo != 1){
+	    escreva("Navega na agua? \n")
+	    leia(veiculo)
+	    se (veiculo == 1){
+	        escreva("Possui vela? \n")
+	        leia(veiculo)
+	        se (veiculo == 1){
+	            escreva("Barco. \n")
+	        }
+	         senao{
+	        escreva("Tem motor? \n")
+	        leia(veiculo)
+	        se (veiculo == 1){
+	            escreva("É alto?")
+	            leia(veiculo)
+	            se (veiculo == 1){
+	                escreva("Navio")
+	                
+	            }
+	            senao {
+	                escreva("Pode ser descoberto? \n")
+	                leia(veiculo)
+	                se (veiculo == 1){
+	                    escreva("Lancha. \n")
+	                }
+	                
+	            }
+	            
+	        }
+	        
+	    }
+	    }
+	   
+	    
+	}
+	    
+	}
+	}
+}
+}
+
+}
