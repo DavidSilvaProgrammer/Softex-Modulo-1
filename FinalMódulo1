@@ -1,0 +1,102 @@
+programa {
+	funcao inicio() {
+	    
+//Após uma prova de vestibular, uma escola quer identificar quantos dos seus alunos foram aprovados em cada turma de formandos. Ela quer saber qual aluno teve a maior nota e de qual turma ele é. Nessa escola, há quatro turmas (A, B, C e D) com vinte e cinco alunos cada.
+//Elabore um algoritmo que solicite o nome e a nota do vestibular aos alunos. Depois, informe quantos deles foram aprovados, de que turma são, qual a maior nota em cada turma e qual aluno teve a maior nota de todas.
+//Para que o aluno seja aprovado no vestibular, ele deverá obter nota maior ou igual a 7.
+//ATENÇÃO: As notas por turma não podem se repetir.
+	    
+	    
+cadeia turma1[3], turma2[3],turma3[3],turma4[3], nome_melhor_a="", nome_melhor_b="", nome_melhor_c="", nome_melhor_d="", nome_melhor_todos=""
+real nota_turma1[3], nota_turma2[3], nota_turma3[3], nota_turma4[3], maior_nota_a=0, maior_nota_b=0, maior_nota_c=0, maior_nota_d=0, maior_nota_todos=0
+inteiro aprov_a=0, aprov_b=0, aprov_c=0, aprov_d=0
+
+para(inteiro i=0; i<3; i++){
+escreva("Digite o nome do aluno " + i + " da turma A: \n")
+leia(turma1[i])
+escreva("Digite a nota do aluno " + i + " da turma A chamado " + turma1[i] + ":\n")
+leia(nota_turma1[i])
+se (nota_turma1[i] >= 7) {
+aprov_a++
+}
+se (nota_turma1[i] >= maior_nota_a) {
+    maior_nota_a = nota_turma1[i]
+    nome_melhor_a = turma1[i]
+}
+    
+}
+
+
+
+para(inteiro j=0; j<3; j++){
+escreva("Digite o nome do aluno " + j + " da turma B: \n")
+leia(turma2[j])
+escreva("Digite a nota do aluno " + j + " da turma B chamado " + turma2[j] + ":\n")
+leia(nota_turma2[j])
+se (nota_turma2[j] >= 7) {
+aprov_b++
+}
+se (nota_turma2[j] >= maior_nota_b) {
+    maior_nota_b = nota_turma2[j]
+    nome_melhor_b = turma2[j]
+}
+}
+
+para(inteiro k=0; k<3; k++){
+escreva("Digite o nome do aluno " + k + " da turma C: \n")
+leia(turma3[k])
+escreva("Digite a nota do aluno " + k + " da turma C chamado " + turma3[k] + ":\n")
+leia(nota_turma3[k])
+se (nota_turma3[k] >= 7) {
+aprov_c++
+}
+se (nota_turma3[k] >= maior_nota_c) {
+    maior_nota_c = nota_turma3[k]
+    nome_melhor_c = turma3[k]
+}
+}
+
+para(inteiro z=0; z<3; z++){
+escreva("Digite o nome do aluno " + z + " da turma D: \n")
+leia(turma4[z])
+escreva("Digite a nota do aluno " + z + " da turma D chamado " + turma4[z] + ":\n")
+leia(nota_turma4[z])
+se (nota_turma4[z] >= 7) {
+aprov_d++
+}
+se (nota_turma4[z] >= maior_nota_d) {
+    maior_nota_d = nota_turma4[z]
+    nome_melhor_d = turma4[z]
+}
+}
+
+se (maior_nota_a > maior_nota_todos){
+    maior_nota_todos=maior_nota_a
+    nome_melhor_todos=nome_melhor_a
+}
+se (maior_nota_b > maior_nota_todos){
+    maior_nota_todos=maior_nota_b
+    nome_melhor_todos=nome_melhor_b
+}
+se (maior_nota_c > maior_nota_todos){
+    maior_nota_todos=maior_nota_c
+    nome_melhor_todos=nome_melhor_c
+}
+se (maior_nota_d > maior_nota_todos){
+    maior_nota_todos=maior_nota_d
+    nome_melhor_todos=nome_melhor_d
+}
+
+escreva("\nLista de informações referentes às turmas e os alunos que prestaram vestibular: \n")
+escreva("\nTurma A: \nQuantidade de alunos aprovados: " +aprov_a+"\nNome do aluno com a melhor nota: " +nome_melhor_a+"\nValor da nota: " +maior_nota_a+"\n")
+escreva("\nTurma B: \nQuantidade de alunos aprovados: " +aprov_b+"\nNome do aluno com a melhor nota: " +nome_melhor_b+"\nValor da nota: " +maior_nota_b+"\n")
+escreva("\nTurma C: \nQuantidade de alunos aprovados: " +aprov_c+"\nNome do aluno com a melhor nota: " +nome_melhor_c+"\nValor da nota: " +maior_nota_c+"\n")
+escreva("\nTurma D: \nQuantidade de alunos aprovados: " +aprov_d+"\nNome do aluno com a melhor nota: " +nome_melhor_d+"\nValor da nota: " +maior_nota_d+"\n")
+escreva("\n\nNome do aluno com a melhor nota de todas as turmas: " +nome_melhor_todos+"\nValor da nota: " +maior_nota_todos+"\n")
+
+
+
+		
+	}
+	}
+
